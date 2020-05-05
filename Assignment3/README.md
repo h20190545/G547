@@ -1,6 +1,29 @@
-Ketan nirmal     2019H140070G
+Ketan Nirmal     2019H140070G
 
-Pankaj chandnani 209H1400545G
+Pankaj Chandnani 209H1400545G
+
+   SYSTEM REQUIRMENT->The code must be run on a LINUX operating system with Kernel Version < 5.0.
+
+ - This code won't work on systems with kernel version > 5.0 as newer versions have completely migrated to multi-queue block layer (blk-mq) by default.
+
+ DETAILS OF THE PROJECT
+=========================
+
+This README file contains information for the project based on implementing a Block Device Driver for the USB drive.
+
+The block device driver includes the following features:
+
+ - Implements the BIO request processing function.
+
+ - Implements the READ(10) and WRITE(10) SCSI command functions in order to read and write sectors on the USB disk.
+
+ - Allocates the USB drive as a disk of its size.
+
+ - Reads the bio and defers the read/write work to the bottom half using workqueue.
+
+ - Process the request in the bottom half by calling appropriate functions (READ/WRITE).
+
+
 
 .>>>>>>>>>USB BLOCK DRIVER CODE FOR READING AND WRITING FILES IN USB USING SCSI COMMANDS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
@@ -33,5 +56,7 @@ step 12: command to read content of file  $ cat test.txt
 
 step 13: command to come outside of root  $ logout
 
-step 14: remove pendrive and again connect ,check its content ,you can clearly see new file test.txt in it along with already existing files
+step 14: command to unmout $ sudo umount /media/pusb
+
+step 15: remove pendrive and again connect ,check its content ,you can clearly see new file test.txt in it along with already existing files
 
