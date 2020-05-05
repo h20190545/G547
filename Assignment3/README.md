@@ -24,8 +24,8 @@ The block device driver includes the following features:
  - Process the request in the bottom half by calling appropriate functions (READ/WRITE).
 
 
-USB BLOCK DRIVER CODE FOR READING AND WRITING FILES IN USB USING SCSI COMMANDS
-===============================================================================
+Steps involved for compilation and execution of code
+=====================================================
 
 step 0: open main.c and enter  vid and pid of your usb device
 
