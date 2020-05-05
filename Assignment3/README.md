@@ -6,7 +6,7 @@ Pankaj Chandnani 209H1400545G
 
  - This code won't work on systems with kernel version > 5.0 as newer versions have completely migrated to multi-queue block layer (blk-mq) by default.
 
- DETAILS OF THE PROJECT
+ Details of the project
 =========================
 
 This README file contains information for the project based on implementing a Block Device Driver for the USB drive.
