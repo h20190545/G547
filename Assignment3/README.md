@@ -2,7 +2,10 @@ Ketan Nirmal     2019H140070G
 
 Pankaj Chandnani 2019H1400545G
 
-   SYSTEM REQUIRMENT->The code must be run on a LINUX operating system with Kernel Version < 5.0.
+ SYSTEM REQUIRMENT
+======================
+
+The code must be run on a LINUX operating system with Kernel Version < 5.0.
 
  - This code won't work on systems with kernel version > 5.0 as newer versions have completely migrated to multi-queue block layer (blk-mq) by default.
 
@@ -24,7 +27,7 @@ The block device driver includes the following features:
  - Process the request in the bottom half by calling appropriate functions (READ/WRITE).
 
 
-Steps involved for compilation and execution of code
+ Steps involved for compilation and execution of code
 =====================================================
 
 step 0: open main.c and enter  vid and pid of your usb device
